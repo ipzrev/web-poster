@@ -1,0 +1,82 @@
+/* Бегущая строка */
+@keyframes ticker-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 20px));
+  }
+}
+
+/* Кот - смена спрайтов */
+@keyframes sprite-switch-1 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -5082px 0px;
+  }
+}
+
+/* Сова - смена спрайтов */
+@keyframes sprite-switch-2 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: calc(var(--width) * -4) 0px;
+  }
+}
+
+/* Падение писем */
+@keyframes falling {
+  0% {
+    top: calc(var(--height) * -1);
+  }
+  100% {
+    top: calc(var(--block-height) + var(--height));
+  }
+}
+
+/* Крыса - смена спрайтов и бег */
+@keyframes sprite-switch-3 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: calc(var(--width) * -2) 0px;
+  }
+}
+
+@keyframes run {
+  0% {
+    translate: calc(-50vw - var(--width));
+  }
+  100% {
+    translate: calc(50vw + var(--width));
+  }
+}
+
+/* Звезды - мерцание */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* Крестообразные звезды */
+@keyframes twinkle-cross {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+}
